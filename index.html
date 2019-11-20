@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 style="text-align: center; margin: 30px;">Welcome to our Cafe!</h1>
+        <form id="coffeeOrderForm" onsubmit="">
+            <div class="form-group">
+            <label for="customerName" class="">Name: </label>
+            <input id="customerName" class="form-control" type="text">
+            </div>
+
+            <div id="coffeeType" class="form-group">
+                <p>Which coffee do you want to order? </p>
+                <input type="radio" name="coffeeType" value="turkish"> Turkish Coffee 3$<br>
+                <input type="radio" name="coffeeType" value="american"> American Coffee 5$<br>
+                <input type="radio" name="coffeeType" value="icedLatte"> Iced Latte 7$<br>
+            </div>
+            <br>
+            <div id="Extras" class="form-group">
+                <p>Do you need any extras? </p>
+                <input type="checkbox" name="extra" value="coffee"> Extra Coffee 1.5$ <br>
+                <input type="checkbox" name="extra" value="cream"> Whipped Cream 2$ <br>
+                <input type="checkbox" name="extra" value="caramel"> Extra Caramel 3$ <br>
+            </div>
+        </form>
+        <button class="btn btn-primary" >Order Coffee</button>
+
+        <h3 style="margin-top: 50px;">Order Summary:</h3>
+        <p id="receipt"></p>
+    </div>
+
+
+</body>
+
+</html>
